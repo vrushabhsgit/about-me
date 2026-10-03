@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0f0f">
+  <meta name="description" content="Vrushabh Damle — software engineer and AI engineer building agentic systems and dependable developer tools.">
+  <title>Vrushabh Damle — Software & AI Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d0f0f'/%3E%3Cpath d='M13 16h10l9 29 9-29h10L37 53H27z' fill='%23b8ff63'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">[light]</button>
+
+  <main class="desktop-shell" aria-label="Interactive portfolio">
+    <section class="answer-pane" aria-live="polite">
+      <div class="answer-kicker">vrushabh.exe:</div>
+      <div class="answer" id="answer"></div>
+    </section>
+
+    <aside class="rail" aria-label="Portfolio navigation">
+      <div class="identity">
+        <img src="./assets/vrushabh.jpg" width="44" height="44" alt="Vrushabh Damle">
+        <div><strong>vrushabh</strong><span>software × ai</span></div>
+      </div>
+      <nav id="desktopNav"></nav>
+      <div class="rail-links">
+        <a href="https://github.com/vrushabhsgit" target="_blank" rel="noreferrer">github ↗</a>
+        <a href="https://www.linkedin.com/in/vrushabh-damle-2a1817216/" target="_blank" rel="noreferrer">linkedin ↗</a>
+        <a href="https://medium.com/@dwrushabh" target="_blank" rel="noreferrer">writing ↗</a>
+        <a href="mailto:dwrushabh@gmail.com">email ↗</a>
+      </div>
+      <p class="rail-note">Based in Pune, India<br>building in public.</p>
+    </aside>
+
+    <form class="prompt-bar" id="promptForm">
+      <label for="prompt">ask about vrushabh</label>
+      <div class="prompt-row"><span>&gt;&gt;&gt;</span><textarea id="prompt" rows="2" spellcheck="false" placeholder="projects, stack, experience..." aria-describedby="promptHelp"></textarea></div>
+      <div class="prompt-meta"><span id="promptHelp">enter to ask · shift+enter for a new line</span><button type="submit">send</button></div>
+    </form>
+  </main>
+
+  <main class="mobile-shell">
+    <header class="mobile-hero">
+      <div class="signal" aria-hidden="true"><canvas id="signalCanvas"></canvas></div>
+      <p>software engineer · ai engineer · open-source builder</p>
+      <h1>Vrushabh<br>Damle</h1>
+      <div class="mobile-links">
+        <a href="https://github.com/vrushabhsgit" target="_blank" rel="noreferrer">github</a>
+        <a href="https://www.linkedin.com/in/vrushabh-damle-2a1817216/" target="_blank" rel="noreferrer">linkedin</a>
+        <a href="https://medium.com/@dwrushabh" target="_blank" rel="noreferrer">medium</a>
+      </div>
+    </header>
+    <div id="mobileSections"></div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
